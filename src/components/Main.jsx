@@ -1,3 +1,5 @@
+import 'Main.css';
+
 function Main() { 
     return <main>
 
@@ -7,6 +9,5 @@ function Main() {
     <img src="/img/buy-comics-subscriptions.png" alt="" />
     <img src="/img/buy-comics-shop-locator.png" alt="" />
     </main>
-    
 }
 export default Main;
