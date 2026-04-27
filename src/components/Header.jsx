@@ -12,9 +12,8 @@ function Header() {
             <li><a href="/">Fans</a></li>
             <li><a href="/">News</a></li>
             <li><a href="/">Shop</a></li>
-ì
         </ul>
     </header>
-    
+
 }
 export default Header;
