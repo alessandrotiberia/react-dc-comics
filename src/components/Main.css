@@ -1,0 +1,48 @@
+/* Rimuovo eventuali margini e faccio occupare tutta la larghezza al blocco principale */
+.blocco_principale {
+    width: 100%;
+}
+.sezione_nera {
+    background-color: #1c1c1c; /* Colore scuro simile al layout */
+    color: white;
+    padding: 50px 0; /* Aggiungo spazio verticale per dare respiro al testo */
+}
+
+.testo_segnaposto {
+    width: 80%; /* Mantiene l'allineamento con il logo dell'header */
+    margin: 0 auto; /* Centra il testo nella pagina */
+    font-size: 22px;
+    font-weight: bold;
+}
+.sezione_blu {
+    background-color: #0282f9; /* Colore blu iconico DC */
+    padding: 40px 0;
+}
+/* Questo contenitore tiene insieme tutte le icone e le allinea */
+.contenitore_servizi {
+    width: 80%;
+    margin: 0 auto;
+    display: flex; /* Mette gli elementi sulla stessa riga */
+    justify-content: space-around; /* Distribuisce lo spazio equamente tra i vari servizi */
+    align-items: center;
+}
+
+/* Configurazione del singolo blocco immagine + testo */
+.singolo_servizio {
+    display: flex;
+    align-items: center; /* Allinea verticalmente l'immagine con il suo testo */
+    cursor: pointer; /* Fa apparire la manina quando si passa sopra con il mouse */
+}
+
+/* Regolo la grandezza delle icone per non farle risultare enormi */
+.immagine_servizio {
+    width: 50px;
+    margin-right: 15px; /* Spazio tra l'immagine e la parola a destra */
+}
+
+.testo_servizio {
+    color: white;
+    font-size: 14px;
+}
+
+

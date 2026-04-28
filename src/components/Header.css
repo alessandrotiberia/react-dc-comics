@@ -1,2 +1,49 @@
+/* File: Header.css */
 
+/* Il tag header fa da contenitore principale. Utilizzo flexbox per allineare gli elementi. */
+header {
+    display: flex;
+    justify-content: space-between; /* Spinge il logo a sinistra e la lista dei link a destra */
+    align-items: center; /* Allinea verticalmente gli elementi al centro della barra */
+    padding: 20px 0; /* Aggiunge spazio sopra e sotto gli elementi */
+    width: 80%; /* Imposta una larghezza per non far attaccare i contenuti ai margini dello schermo */
+    margin: 0 auto; /* Centra l'intero blocco header nella pagina */
+    background-color: white; /* Imposta lo sfondo bianco */
+}
 
+/* Regolo la dimensione dell'immagine del logo contenuta nell'header */
+header img {
+    width: 80px;
+}
+
+/* Rimuovo lo stile predefinito della lista HTML e allineo i link in orizzontale */
+header ul {
+    display: flex;
+    list-style-type: none; /* Rimuove i pallini neri di default dalle liste HTML */
+    margin: 0;
+    padding: 0;
+}
+
+/* Aggiungo una spaziatura tra un elemento e l'altro della lista */
+header li {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Stile per i collegamenti testuali (i tag a) */
+header a {
+    text-decoration: none; /* Rimuove la sottolineatura blu predefinita dei link */
+    color: #333333; /* Colore grigio scuro per il testo */
+    font-weight: bold; /* Rende il testo in grassetto */
+    font-size: 12px;
+    text-transform: uppercase; /* Forza tutto il testo a essere maiuscolo come da immagine */
+    padding-bottom: 35px; /* Crea uno spazio inferiore per poter ospitare la linea blu */
+    border-bottom: 4px solid transparent; /* Crea un bordo invisibile di base per non far saltare il layout */
+}
+
+/* Effetto hover: quando il puntatore del mouse passa sopra il link, cambiano i colori */
+header a:hover {
+    color: #0282f9; /* Colore blu della DC Comics per il testo */
+    border-bottom: 4px solid #0282f9; /* La linea inferiore invisibile di prima diventa blu */
+}
