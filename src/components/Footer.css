@@ -1,0 +1,130 @@
+/* --- STILI GENERALI DEL FOOTER --- */
+.pie_di_pagina {
+    width: 100%;
+}
+
+/* --- STILI PER LA SEZIONE SUPERIORE --- */
+.sezione_superiore {
+    /* Imposto l'immagine di sfondo. Assicurati che il percorso sia corretto. */
+    background-image: url('/img/footer-bg.jpg');
+    background-size: cover; /* L'immagine copre tutto lo spazio disponibile */
+    background-position: center; /* Centra l'immagine di sfondo */
+    padding: 40px 0;
+    overflow: hidden; /* Taglia le parti del logo gigante che escono da questo contenitore */
+}
+
+/* Contenitore che centra il contenuto all'interno dell'80% dello schermo */
+.contenitore_superiore {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Mette le liste a sinistra e il logo a destra */
+    position: relative; /* Serve come punto di riferimento per il logo assoluto */
+}
+
+/* Metto le tre colonne una di fianco all'altra */
+.contenitore_colonne {
+    display: flex;
+}
+
+.colonna_link {
+    margin-right: 40px; /* Crea spazio tra una colonna e l'altra */
+}
+
+.titolo_lista {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 20px; /* Distanza superiore se ci sono due liste nella stessa colonna */
+}
+
+/* Tolgo il margine superiore al primo titolo per allinearlo in alto */
+.colonna_link .titolo_lista:first-child {
+    margin-top: 0;
+}
+
+.lista_footer {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista_footer li {
+    margin-bottom: 5px; /* Spazio tra i singoli link */
+}
+
+.lista_footer a {
+    color: gray;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Effetto al passaggio del mouse sui link */
+.lista_footer a:hover {
+    color: white;
+}
+
+/* --- STILE PER IL LOGO DI SFONDO --- */
+.contenitore_logo_sfondo {
+    width: 50%; /* Prende la metà destra del contenitore */
+    position: absolute; /* Mi permette di muoverlo liberamente */
+    top: -100px; /* Lo sposto in alto rispetto al suo punto di partenza */
+    right: 0;
+}
+
+.logo_sfondo {
+    width: 100%;
+}
+
+/* --- STILI PER LA SEZIONE INFERIORE --- */
+.sezione_inferiore {
+    background-color: #303030;
+    padding: 30px 0;
+    position: relative; /* Assicura che questa barra stia sopra l'immagine di sfondo precedente */
+    z-index: 2; /* Livello di profondità: sta sopra agli elementi con z-index inferiore o nullo */
+}
+
+.contenitore_inferiore {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Spinge il bottone a sinistra e i social a destra */
+    align-items: center; /* Allinea gli elementi verticalmente al centro */
+}
+
+/* Stile del bottone */
+.bottone_registrazione {
+    background-color: transparent; /* Sfondo trasparente come nell'immagine */
+    color: white;
+    border: 2px solid #0282f9; /* Bordo blu */
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bottone_registrazione:hover {
+    background-color: #0282f9; /* Diventa blu al passaggio del mouse */
+}
+
+/* Stile della parte social */
+.blocco_social {
+    display: flex;
+    align-items: center;
+}
+
+.titolo_social {
+    color: #0282f9;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.contenitore_icone {
+    display: flex;
+    gap: 15px; /* Crea uno spazio uguale tra ogni icona */
+}
+
+.icona_social {
+    cursor: pointer;
+}
