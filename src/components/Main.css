@@ -45,4 +45,113 @@
     font-size: 14px;
 }
 
+/* Stile per il Jumbotron */
+.sezione_jumbotron {
+    height: 400px;
+    background-image: url('/img/jumbotron.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sezione_nera {
+    background-color: #1c1c1c;
+    padding-bottom: 30px;
+}
+
+.contenitore_centrale {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Stile per l'etichetta blu CURRENT SERIES */
+.etichetta_serie {
+    background-color: #0282f9;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    position: absolute;
+    top: -25px; /* La sposta sopra il bordo della sezione nera */
+    left: 0;
+}
+
+/* Configurazione della griglia: 6 colonne uguali */
+.griglia_fumetti {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.carta_fumetto {
+    width: 100%;
+}
+
+/* Rendiamo le copertine quadrate come nello screenshot */
+.contenitore_immagine {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.contenitore_immagine img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.titolo_fumetto {
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* Stile per il pulsante LOAD MORE */
+.contenitore_pulsante {
+    display: flex;
+    justify-content: center;
+}
+
+.pulsante_carica {
+    background-color: #0282f9;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Sezione Blu rimanente */
+.sezione_blu {
+    background-color: #0282f9;
+    padding: 40px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.contenitore_servizi {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.singolo_servizio {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.immagine_servizio {
+    height: 45px;
+    margin-right: 15px;
+}
+
+.testo_servizio {
+    font-size: 13px;
+}
 

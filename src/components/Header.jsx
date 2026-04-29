@@ -1,7 +1,9 @@
 import './Header.css';
 
 function Header() {
+    
     return <header>
+        
         <img src="/img/dc-logo.png" alt="" />
         <ul>
             <li><a href="/">Characters</a></li>
@@ -15,6 +17,7 @@ function Header() {
             <li><a href="/">News</a></li>
             <li><a href="/">Shop</a></li>
         </ul>
+
     </header>
 
 }
