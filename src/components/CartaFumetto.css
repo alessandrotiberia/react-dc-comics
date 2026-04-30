@@ -1,0 +1,29 @@
+
+/* Stile per il contenitore principale della singola card */
+.carta_fumetto {
+    width: 100%;
+}
+
+/* Rendiamo le copertine quadrate e nascondiamo gli eccessi */
+.contenitore_immagine {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+/* Adattiamo l'immagine al suo contenitore quadrato */
+.contenitore_immagine img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Formattazione del testo del titolo */
+.titolo_fumetto {
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: normal;
+}

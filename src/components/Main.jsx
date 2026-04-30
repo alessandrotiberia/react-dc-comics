@@ -1,11 +1,12 @@
- import './Main.css';
-// Importo il file con i dati dei fumetti
+
+import './Main.css';
 import dati_fumetti from './comics.js';
-
-
+// Importo il nuovo componente creato
+import CartaFumetto from './CartaFumetto.jsx';
 
 function Main() {
-    // Creo un array di oggetti per rendere dinamica anche la sezione blu
+    
+    // Array contenente i dati per la sezione blu
     const lista_servizi = [
         { testo: 'DIGITAL COMICS', url_img: '/img/buy-comics-digital-comics.png' },
         { testo: 'DC MERCHANDISE', url_img: '/img/buy-comics-merchandise.png' },
@@ -17,24 +18,20 @@ function Main() {
     return (
         <main className="blocco_principale">
             
-            {/* Sezione per il Jumbotron con l'immagine di sfondo */}
             <div className="sezione_jumbotron"></div>
 
             <div className="sezione_nera">
                 <div className="contenitore_centrale">
                     
-                    {/* Etichetta azzurra che si sovrappone al bordo */}
                     <div className="etichetta_serie">CURRENT SERIES</div>
 
-                    {/* Inizio della griglia dei fumetti dinamica */}
                     <div className="griglia_fumetti">
-                        {dati_fumetti.map((singolo_fumetto) => (
-                            <div key={singolo_fumetto.id} className="carta_fumetto">
-                                <div className="contenitore_immagine">
-                                    <img src={singolo_fumetto.thumb} alt={singolo_fumetto.series} />
-                                </div>
-                                <h4 className="titolo_fumetto">{singolo_fumetto.series}</h4>
-                            </div>
+                        {/* Itero sull'array dei fumetti. Per ogni elemento, renderizzo il componente CartaFumetto */}
+                        {dati_fumetti.map((elemento_corrente) => (
+                            <CartaFumetto 
+                                key={elemento_corrente.id} 
+                                singolo_fumetto={elemento_corrente} 
+                            />
                         ))}
                     </div>
 
@@ -47,7 +44,7 @@ function Main() {
 
             <div className="sezione_blu">
                 <div className="contenitore_servizi">
-                    {/* Iterazione sulla lista dei servizi per creare le icone blu */}
+                    
                     {lista_servizi.map((elemento_servizio, indice_servizio) => (
                         <div key={indice_servizio} className="singolo_servizio">
                             <img 
@@ -58,6 +55,7 @@ function Main() {
                             <span className="testo_servizio">{elemento_servizio.testo}</span>
                         </div>
                     ))}
+                    
                 </div>
             </div>
 
