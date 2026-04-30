@@ -2,6 +2,8 @@
 // Importo il file con i dati dei fumetti
 import dati_fumetti from './comics.js';
 
+
+
 function Main() {
     // Creo un array di oggetti per rendere dinamica anche la sezione blu
     const lista_servizi = [
